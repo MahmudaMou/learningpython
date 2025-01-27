@@ -3,7 +3,7 @@ for x in range(1,11):
     print(x)
 print("Happy New Year") #this line will be out of for loop
 #if we don't specify the first range it will start counting from 0
-print("without specifing the first range")
+print("without specifying the first range")
 for x in range(11):
     print(x)
 #following code will count 10 to 1. the third number in the range function(2) is the step.

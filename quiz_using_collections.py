@@ -27,3 +27,19 @@ for question in questions:
         print("INCORRECT")
         print(f"{answers[question_num]} is the correct answer")
     question_num +=1
+print("------------------")
+print("RESULT")
+print("------------------")
+print("Answers: ", end=" ")
+for answer in answers:
+    print(answer, end=" ")
+print()
+
+print("Guesses: ", end=" ")
+for guess in guesses:
+    print(guess, end=" ")
+print()
+score = int(score / len(questions) * 100)
+print(f"Your Score is: {score}%")
+
+
