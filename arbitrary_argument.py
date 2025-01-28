@@ -15,3 +15,30 @@ def display_name(*names):
     for name in names:
         print(name,end=" ")
 display_name("Mrs","Mahmuda","Khanam","Mou")
+
+def print_address(**kwargs):
+    for key, value in kwargs.items():
+        print(f"{key}:{value}")
+print_address(street="123 fake street",
+              apt="100",
+              city="Detroit",
+              state="MI",
+              Zip="54321")
+def shipping_label(*args,**kwargs):
+    for arg in args:
+        print(arg,end=" ")
+    print()
+    for value in kwargs.values():
+        print(value,end=",")
+    if "country" in kwargs:
+        print(f"{kwargs.get('country')}") #here used single quot otherwise python will get confused with too many double quot
+
+
+shipping_label("Mr","SpongeBob","Square pants","II",  #as in function *args are writen first here *args should be first
+               street="123 fake street",
+               apt="100",
+               city="Detroit",
+               state="MI",
+               Zip="54321",
+               country="Bangladesh"
+               )
