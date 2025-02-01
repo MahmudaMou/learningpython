@@ -53,6 +53,17 @@ items = capitals.items()
 print(items)
 for key,value in capitals.items():
     print(f"{key}:{value}")
+
+#Exercise
+grades={"Sandy":"A",
+        "Anita":"C",
+        "Mohit":"B",
+        "Bhumi":"A"}
+student = input("Enter Student Name: ")
+if student in grades:
+    print(f"{student}'s grad is {grades[student]}")
+else:
+    print("Student not found")
     
 
 

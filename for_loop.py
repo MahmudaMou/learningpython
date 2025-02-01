@@ -28,5 +28,9 @@ for x in range(1,11):
     else:
         print(x)
 
+#Membership operators->in and not in are membership operator
+#these are used to test whether a value/variable is found
+#                in sequence(string,list,set,tuple or dictionary)
+
 
 
